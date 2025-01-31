@@ -26,7 +26,7 @@ Uma vez registrada a venda, o vendedor envia manualmente o produto para o client
 
 #### Erro/Problema: O envio manual de produtos pode ser demorado e estar sujeito a falhas, como o envio para o endereço errado ou a não inclusão de todas as informações necessárias para o cliente.
 
-# Conclusão
+## Conclusão
 Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A dependência de planilhas para o registro de dados, a falta de automação no processo de atendimento ao cliente e a gestão desorganizada das compras e vendas são aspectos que dificultam a escalabilidade do negócio.
 
 
