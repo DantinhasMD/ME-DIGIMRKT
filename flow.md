@@ -28,6 +28,3 @@ Uma vez registrada a venda, o vendedor envia manualmente o produto para o client
 
 ## Conclusão
 Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A dependência de planilhas para o registro de dados, a falta de automação no processo de atendimento ao cliente e a gestão desorganizada das compras e vendas são aspectos que dificultam a escalabilidade do negócio.
-
-
-# Fluxo de Negócio - Expectativa 
