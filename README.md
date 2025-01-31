@@ -2,10 +2,12 @@
 Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA
 
 ## Desenvolvimento - 1: Etapa 
-1️⃣ Automação do preenchimento de dados (Formulário + Google Sheets + Apps Script).
-2️⃣ Criação do chatbot para otimizar atendimento e notificações.
-3️⃣ Controle de estoque automático vinculado ao formulário de vendas.
-4️⃣ Visualização dos dados com gráficos interativos.
+<li>
+  1️⃣ Automação do preenchimento de dados (Formulário + Google Sheets + Apps Script).     
+  2️⃣ Criação do chatbot para otimizar atendimento e notificações.
+  3️⃣ Controle de estoque automático vinculado ao formulário de vendas.
+  4️⃣ Visualização dos dados com gráficos interativos.
+</li>
 
 ### 1) Criar a Estrutura de Coleta de Dados (Preenchimento Automático)
 ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.
