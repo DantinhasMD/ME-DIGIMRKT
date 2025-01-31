@@ -1,4 +1,4 @@
-# Apresentação dos Problemas do Projeto
+# Apresentação dos Problemas do Projeto 👀
 O nosso projeto enfrenta quatro problemas principais que comprometem a eficiência operacional e o crescimento da loja digital. Abaixo, apresento uma descrição detalhada de cada um desses desafios:
 
 ## 1. Problema no Preenchimento de Dados
