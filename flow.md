@@ -1,4 +1,4 @@
-# Fluxo Atual do Negócio
+# Fluxo Atual do Negócio 👻
 O processo de revenda de licenças digitais na loja segue um fluxo manual e desconectado, resultando em ineficiências e erros em várias etapas do processo. Abaixo, apresento o fluxo atual detalhado e os problemas enfrentados em cada fase:
 
 ## 1. Recebimento da Solicitação de Compra
