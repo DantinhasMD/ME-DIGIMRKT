@@ -3,9 +3,9 @@
 
 ### 📌 Pré-Desenvolvimento: Compreender os dados que precisamos e o relacionamento entre eles.
 
+![Dados](https://github.com/user-attachments/assets/54547086-85b3-475d-b2e5-e610d4e90a44)
 
-
-### Criar um Google Formulário para coletar dados de compra e venda.     
+## 1) Criar um Google Formulário para coletar dados de compra e venda.     
 #### 1️⃣ - Formulário de Registro de Compra (quando o vendedor compra um produto para revenda).      
 🔸 Produto (Nome ou Tipo) → Pergunta de seleção (baseada nos produtos disponíveis).             
 🔸 Chave do Produto → Campo de texto curto.                                  
