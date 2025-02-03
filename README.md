@@ -26,6 +26,7 @@ Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A 
   3️⃣- Controle de estoque automático vinculado ao formulário de vendas.                    
   4️⃣- Visualização dos dados com gráficos interativos.              
 
+
 ### 1) Criar a Estrutura de Coleta de Dados (Preenchimento Automático)
 #### ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.         
 🔹Criar um Google Formulário para coletar dados de compra e venda.      
@@ -33,6 +34,7 @@ Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A 
 🔹Escrever um Google Apps Script para organizar esses dados e evitar erros.    
 
 💡 Por que começar por aqui? Sem os dados organizados, o chatbot, estoque e relatórios não terão informações estruturadas para funcionar corretamente.
+
 
 ### 2) Desenvolver o Chatbot para Atendimento Automatizado
 #### ✅ Objetivo: Criar um atendimento eficiente e automático para separar dúvidas e solicitações urgentes.      
@@ -42,6 +44,7 @@ Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A 
 
 💡 Por que fazer isso em segundo lugar? Porque as informações do formulário já estarão estruturadas, permitindo ao chatbot acessar dados organizados e facilitar o atendimento.
 
+
 ### 3) Criar o Sistema de Controle de Estoque Automatizado
 #### ✅ Objetivo: Monitorar os produtos vendidos e ajustar o estoque automaticamente.     
 🔹Criar uma aba no Google Sheets para armazenar o estoque.       
@@ -49,6 +52,7 @@ Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A 
 🔹Implementar alertas para avisar quando um produto estiver com estoque baixo.      
 
 💡 Por que esse é o terceiro passo? Com o chatbot e os formulários funcionando, já teremos um fluxo de entrada de dados que permitirá atualizar o estoque em tempo real.
+
 
 ### 4) Criar Relatórios e Visualização de Dados
 #### ✅ Objetivo: Melhorar a análise de vendas e finanças para tomar decisões estratégicas.       
