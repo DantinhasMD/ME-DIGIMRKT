@@ -1,6 +1,15 @@
 # ME-DIGIMRKT - Auxiliador para o Microempreendedor 🔥
 Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA
 
+## Apresentação do Problema 👀 
+O nosso projeto enfrenta quatro problemas principais que comprometem a eficiência operacional e o crescimento da loja digital. Abaixo, apresento uma descrição detalhada de cada um desses desafios: {Explicação Completa=[https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/2_problems.md]
+
+1. Problema no Preenchimento de Dados    
+2. Problema para Responder Clientes    
+3. Sem Controle de Estoque     
+4. Problema de Visualização   
+
+
 ## Desenvolvimento
   1️⃣- Automação do preenchimento de dados (Formulário + Google Sheets + Apps Script).        
   2️⃣- Criação do chatbot para otimizar atendimento e notificações.                  
