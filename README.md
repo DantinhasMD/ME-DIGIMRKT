@@ -7,7 +7,10 @@ O nosso projeto enfrenta quatro problemas principais que comprometem a eficiênc
 1. Problema no Preenchimento de Dados    
 2. Problema para Responder Clientes    
 3. Sem Controle de Estoque     
-4. Problema de Visualização   
+4. Problema de Visualização
+
+Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A dependência de planilhas para o registro de dados, a falta de automação no processo de atendimento ao cliente e a gestão desorganizada das compras e vendas são aspectos que dificultam a escalabilidade do negócio.
+[Explicação do Fluxo](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/1_flow.md)
 
 
 ## Desenvolvimento
