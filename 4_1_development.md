@@ -22,8 +22,8 @@
 🔸 Produto Vendido (Lista suspensa)                                 
 🔸 Valor da Venda (Número)                                 
 🔸 Tarifa da Plataforma (Número)                                 
-🔸 Data da Venda (Data)
-🔸 Lucro Obtido (Número)                                 
+🔸 Data da Venda (Data)                                                                  
+🔸 Lucro Obtido (Número)                                                                                                   
 🔸 Nome do Vendedor (Texto curto)                                 
 
 📌 Faça as outras planilhas necessárias.
