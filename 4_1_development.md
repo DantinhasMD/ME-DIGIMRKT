@@ -1,4 +1,4 @@
-# 1) Criar a Estrutura de Coleta de Dados (Preenchimento Automático) 
+# Criar a Estrutura de Coleta de Dados (Preenchimento Automático) 
 ## ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.     
 
 ### 📌 Pré-Desenvolvimento: Compreender os dados que precisamos e o relacionamento entre eles.
@@ -46,10 +46,9 @@
 🔸 E-mail do Fornecedor (E-mail)                                 
 🔸 Site do Fornecedor (URL)                                 
 
-### Configurar o Google Sheets para armazenar essas informações automaticamente.    
+## 2) Configurar o Google Sheets para armazenar essas informações automaticamente.    
 🔸 A criação de Formulários no Google intregra com a Planilha criada automáticamente. 
 
-### Escrever um Google Apps Script para organizar esses dados e evitar erros.    
-
+## 3) Escrever um Google Apps Script para organizar esses dados e evitar erros.    
 
 
