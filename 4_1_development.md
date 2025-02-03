@@ -1,6 +1,10 @@
 # 1) Criar a Estrutura de Coleta de Dados (Preenchimento Automático) 
 ## ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.     
 
+### 📌 Pré-Desenvolvimento: Compreender os dados que precisamos e o relacionamento entre eles.
+
+
+
 ### Criar um Google Formulário para coletar dados de compra e venda.     
 #### 1️⃣ - Formulário de Registro de Compra (quando o vendedor compra um produto para revenda).      
 🔸 Produto (Nome ou Tipo) → Pergunta de seleção (baseada nos produtos disponíveis).   
