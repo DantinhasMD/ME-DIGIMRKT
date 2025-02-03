@@ -1,3 +1,4 @@
+# Proposta de Solução 🚀
 Atualmente, enfrentamos quatro grandes desafios no nosso processo de revenda de licenças digitais: preenchimento manual de dados, demora na resposta aos clientes, falta de controle de estoque e dificuldade na visualização de informações importantes sobre o negócio. Para solucionar essas questões, propomos um sistema automatizado e integrado utilizando ferramentas gratuitas e eficientes.
 
 ## 1) Automação do Preenchimento de Dados
