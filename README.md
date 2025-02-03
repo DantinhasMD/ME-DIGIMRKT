@@ -1,4 +1,4 @@
-# ME-DIGIMRKT - Auxiliador para o Microempreendedor 🔥
+# DIGIMRKT - Auxiliador para o Microempreendedor 🔥
 Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA
 
 ## Apresentação do Problema 👀 
