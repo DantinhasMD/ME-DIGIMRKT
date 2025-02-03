@@ -2,7 +2,7 @@
 Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA
 
 ## Apresentação do Problema 👀 
-O nosso projeto enfrenta quatro problemas principais que comprometem a eficiência operacional e o crescimento da loja digital. Abaixo, apresento uma descrição detalhada de cada um desses desafios: {Explicação Completa=[https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/2_problems.md]
+O nosso projeto enfrenta quatro problemas principais que comprometem a eficiência operacional e o crescimento da loja digital. Abaixo, apresento uma descrição detalhada de cada um desses desafios: [Explicação do Problema](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/2_problems.md)
 
 1. Problema no Preenchimento de Dados    
 2. Problema para Responder Clientes    
@@ -12,6 +12,13 @@ O nosso projeto enfrenta quatro problemas principais que comprometem a eficiênc
 Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A dependência de planilhas para o registro de dados, a falta de automação no processo de atendimento ao cliente e a gestão desorganizada das compras e vendas são aspectos que dificultam a escalabilidade do negócio.
 [Explicação do Fluxo](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/1_flow.md)
 
+## Proposta de solução 🚀
+- Coleta de dados → Google Forms alimentando o Google Sheets automaticamente.
+- Atendimento ao cliente → Chatbot para organizar solicitações e priorizar respostas.
+- Controle de estoque → Atualização automática dos dados no Google Sheets e visualização no Google Data Studio.
+- Análise de desempenho → Relatórios interativos no Google Data Studio ou Metabase.
+
+[Explicação da Solução](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/3_solution.md)
 
 ## Desenvolvimento
   1️⃣- Automação do preenchimento de dados (Formulário + Google Sheets + Apps Script).        
