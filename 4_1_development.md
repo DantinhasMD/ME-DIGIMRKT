@@ -28,18 +28,18 @@
 
 📌 Faça as outras planilhas necessárias.
 
-#### 2️⃣ - Seção: Dados do Cliente (Formulário e Planilha)
+#### 3️⃣ - Seção: Dados do Cliente (Formulário e Planilha)
 🔸 CPF (Texto curto)                                 
 🔸 Nome (Texto curto)                                 
 🔸 Telefone (Número)                                 
 🔸 E-mail (E-mail)                                 
 
-#### 2️⃣ - Seção: Controle de Estoque (Planilha)
+#### 4️⃣ - Seção: Controle de Estoque (Planilha)
 🔸 ID do Estoque (Número)                                 
 🔸 Produto (Texto curto)                                 
 🔸 Quantidade em Estoque (Número)                                 
 
-#### 2️⃣ - Seção: Fornecedores (Formulário e Planilha)
+#### 5️⃣ - Seção: Fornecedores (Formulário e Planilha)
 🔸 ID do Fornecedor (Número)                                 
 🔸 Nome do Fornecedor (Texto curto)                                 
 🔸 País de Origem (Texto curto)                                 
