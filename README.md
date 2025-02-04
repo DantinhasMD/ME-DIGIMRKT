@@ -1,5 +1,8 @@
 # DIGIMRKT - Auxiliador para o Microempreendedor 🔥
-Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA
+Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA. Projeto desenvolvido para Eletiva da faculdade de Análise e Desenvolviemntos de Sistemas, utilizando também de habilidades desenvolvidas em outros cursos, como:
+### -   Coursera: Análise de Dados 
+### -   Bootcamp DIO: Suzano - Análise de Dados com Power BI
+### -   Bootcamp DIO: Heineken - Inteligência Artificial Aplicada a Dados
 
 ## Apresentação do Problema 👀 
 O nosso projeto enfrenta quatro problemas principais que comprometem a eficiência operacional e o crescimento da loja digital. Abaixo, apresento uma descrição detalhada de cada um desses desafios: [Explicação do Problema](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/2_problems.md)
