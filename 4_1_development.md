@@ -50,7 +50,7 @@
 ### 2️⃣ - Funções da Planilha de Vendas preenchidos automáticamente
 🔸 O nome do Produto é obtido a partir do ID especificado, utilizando a função: =INDEX(Compras!C:C, MATCH(Vendas!C3, Compras!B:B, 0))
 🔸 O valor da Compra é obtido a partir do ID especificado, utiliando a função: =IFERROR(INDEX(Compras!E2:E, MATCH(Vendas!C3, Compras!B2:B, 0)), "")
-🔸 A Tarifa de hospedagem é
+🔸 A Tarifa de hospedagem é                                                               
 🔸 O Lucro é calculado a partir da função: =D3-H3-I3
 
 ### 3️⃣ - Funções da Planilha de Estoque preenchidos automáticamente
