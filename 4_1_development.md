@@ -7,26 +7,27 @@
 
 ## 1) Criar um Google Formulário para coletar dados de compra e venda.     
 #### 1️⃣ - Formulário de Registro de Compra (quando o vendedor compra um produto para revenda).      
-🔸 ID do Produto (Número)                                    
+🔸 ID da Compra (Número)                                    
 🔸 Nome do Produto (Texto curto)                                   
 🔸 Chave de Ativação (Texto curto)                                 
 🔸 Valor de Compra (Número)                                   
 🔸 Data da Compra (Data)                                                    
-🔸 idFornecedor (Lista suspensa)                                                           
+🔸 idFornecedor (Texto curto)                                                             
  
 📌 Ative a opção de "Coletar respostas em uma planilha do Google" para salvar automaticamente os dados. Lembre de colocar os tipos de dados que esta tabela dinâmica irá receber.
 
-#### 2️⃣ - Formulário de Registro de Venda (quando o vendedor vende um produto para um cliente).     
-🔸 ID da Venda (Número)                                 
+#### 2️⃣ - Formulário de Registro de Venda (quando o vendedor vende um produto para um cliente).                                    
 🔸 CPF do Cliente (Texto curto)                                 
-🔸 Produto Vendido (Lista suspensa)                                 
-🔸 Valor da Venda (Número)                                 
+🔸 ID da Compra (Número)                                
+🔸 Valor da Venda (Número)   
+🔸 Data da Venda (Data)       
+🔸 Nome do Vendedor (Texto curto)  
+🔸 Nome do Produto (Texto curto)                                   
+🔸 Valor de Compra (Número)                                   
 🔸 Tarifa da Plataforma (Número)                                 
-🔸 Data da Venda (Data)                                                                  
 🔸 Lucro Obtido (Número)                                                                                                   
-🔸 Nome do Vendedor (Texto curto)                                 
 
-📌 Faça as outras planilhas necessárias.
+📌 Faça as outras planilhas necessárias que não são ligadas a formulários.
 
 #### 3️⃣ - Seção: Dados do Cliente (Formulário e Planilha)
 🔸 CPF (Texto curto)                                 
@@ -34,20 +35,27 @@
 🔸 Telefone (Número)                                 
 🔸 E-mail (E-mail)                                 
 
-#### 4️⃣ - Seção: Controle de Estoque (Planilha)
-🔸 ID do Estoque (Número)                                 
+#### 4️⃣ - Seção: Controle de Estoque (Planilha)                                
 🔸 Produto (Texto curto)                                 
 🔸 Quantidade em Estoque (Número)                                 
-
-#### 5️⃣ - Seção: Fornecedores (Formulário e Planilha)
-🔸 ID do Fornecedor (Número)                                 
-🔸 Nome do Fornecedor (Texto curto)                                 
-🔸 País de Origem (Texto curto)                                 
-🔸 E-mail do Fornecedor (E-mail)                                 
-🔸 Site do Fornecedor (URL)                                 
+                           
 
 ## 2) Configurar o Google Sheets para armazenar essas informações automaticamente.    
 🔸 A criação de Formulários no Google intregra com a Planilha criada automáticamente. 
+🔸 Esses dados são recebidos e, através de funções diretas do Excel, são manipulados corretamente.
+
+### 1️⃣ - Funções da Planilha de Compra preenchidos automáticamente
+🔸 ID da compra é gerado utilizando a função: =IF(Compras!C2:C<>"", ROW()-1, "")
+
+### 2️⃣ - Funções da Planilha de Vendas preenchidos automáticamente
+🔸 O nome do Produto é obtido a partir do ID especificado, utilizando a função: =INDEX(Compras!C:C, MATCH(Vendas!C3, Compras!B:B, 0))
+🔸 O valor da Compra é obtido a partir do ID especificado, utiliando a função: =IFERROR(INDEX(Compras!E2:E, MATCH(Vendas!C3, Compras!B2:B, 0)), "")
+🔸 A Tarifa de hospedagem é
+🔸 O Lucro é calculado a partir da função: =D3-H3-I3
+
+### 3️⃣ - Funções da Planilha de Estoque preenchidos automáticamente
+🔸 A quatidade de produtos é obtido a partir do nome especificado na coluna anterior, usando a função: =COUNTIF(Compras!C:C, Estoque!A2) - COUNTIF(Vendas!G:G, Estoque!A2)
+
 
 ## 3) Escrever um Google Apps Script para organizar esses dados e evitar erros.    
 
