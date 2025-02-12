@@ -48,18 +48,21 @@
 🔸 Esses dados são recebidos e, através de funções diretas do Excel, são manipulados corretamente.
 
 ### 1️⃣ - Funções da Planilha de Compra preenchidos automáticamente
-🔸 ID da compra é gerado utilizando a função: =IF(Compras!C2:C<>"", ROW()-1, "")
+🔸 ID da compra é gerado utilizando a função: 
+##### =IF(Compras!C2:C<>"", ROW()-1, "")
 
 ### 2️⃣ - Funções da Planilha de Vendas preenchidos automáticamente
-🔸 O nome do Produto é obtido a partir do ID especificado, utilizando a função: =INDEX(Compras!C:C, MATCH(Vendas!C3, Compras!B:B, 0))
-🔸 O valor da Compra é obtido a partir do ID especificado, utiliando a função: =IFERROR(INDEX(Compras!E2:E, MATCH(Vendas!C3, Compras!B2:B, 0)), "")
+🔸 O nome do Produto é obtido a partir do ID especificado, utilizando a função: 
+##### =INDEX(Compras!C:C, MATCH(Vendas!C3, Compras!B:B, 0))                 
+
+🔸 O valor da Compra é obtido a partir do ID especificado, utiliando a função: 
+#### =IFERROR(INDEX(Compras!E2:E, MATCH(Vendas!C3, Compras!B2:B, 0)), "")                      
+
 🔸 A Tarifa de hospedagem é                                                               
-🔸 O Lucro é calculado a partir da função: =D3-H3-I3
+🔸 O Lucro é calculado a partir da função: 
+#### =D3-H3-I3
 
 ### 3️⃣ - Funções da Planilha de Estoque preenchidos automáticamente
-🔸 A quatidade de produtos é obtido a partir do nome especificado na coluna anterior, usando a função: =COUNTIF(Compras!C:C, Estoque!A2) - COUNTIF(Vendas!G:G, Estoque!A2)
-
-
-## 3) Escrever um Google Apps Script para organizar esses dados e evitar erros.    
-
+🔸 A quatidade de produtos é obtido a partir do nome especificado na coluna anterior, usando a função: 
+#### =COUNTIF(Compras!C:C, Estoque!A2) - COUNTIF(Vendas!G:G, Estoque!A2)
 
