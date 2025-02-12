@@ -5,11 +5,9 @@ Atualmente, enfrentamos quatro grandes desafios no nosso processo de revenda de 
 Hoje, os dados de compra e venda são inseridos manualmente em planilhas, o que gera erros e dificulta a organização. Para solucionar isso, utilizaremos:
 
 - Google Forms + Google Sheets: O preenchimento de dados será feito por meio de formulários online, garantindo que as informações sejam coletadas de maneira padronizada e organizadas automaticamente.
-- Google Apps Script: Criando scripts para automatizar a alocação de dados, eliminando a necessidade de digitação manual e reduzindo erros humanos.
-Isso permitirá que as informações sejam registradas de forma precisa e estruturada, facilitando o acompanhamento das vendas e estoque.
 
 ## 2) Chatbot para Atendimento Automatizado
-Muitos clientes têm dúvidas e precisam de respostas rápidas. Para otimizar o atendimento e priorizar solicitações urgentes, implementaremos um chatbot gratuito, utilizando ferramentas como Tidio ou ManyChat, que permitirá:
+Muitos clientes têm dúvidas e precisam de respostas rápidas. Para otimizar o atendimento e priorizar solicitações urgentes, implementaremos um chatbot gratuito, utilizando a própria ferramenta de venda do nosso cliente, o Chatbot do Mercado Livre:
 
 Separar mensagens em categorias como:
 - Dúvidas → O chatbot responde automaticamente ou informa um prazo para retorno.
