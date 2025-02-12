@@ -34,8 +34,7 @@ Esse fluxo atual, totalmente manual, está repleto de erros e ineficiências. A 
 ### 1) Criar a Estrutura de Coleta de Dados (Preenchimento Automático)
 #### ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.         
 🔹Criar um Google Formulário para coletar dados de compra e venda.      
-🔹Configurar o Google Sheets para armazenar essas informações automaticamente.     
-🔹Escrever um Google Apps Script para organizar esses dados e evitar erros.    
+🔹Configurar o Google Sheets para armazenar essas informações automaticamente.      
 
 💡 Por que começar por aqui? Sem os dados organizados, o chatbot, estoque e relatórios não terão informações estruturadas para funcionar corretamente.
 [Explore](https://github.com/DantinhasMD/ME-DIGIMRKT/blob/main/4_1_development.md)
