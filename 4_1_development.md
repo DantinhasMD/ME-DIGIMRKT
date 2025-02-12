@@ -5,6 +5,9 @@
 
 ![Dados](https://github.com/user-attachments/assets/54547086-85b3-475d-b2e5-e610d4e90a44)
 
+
+### Precisamos que essa seja a etapa inicial, pois sem os dados organizados, o chatbot, estoque e relatórios não terão informações estruturadas para funcionar corretamente!
+
 ## 1) Criar um Google Formulário para coletar dados de compra e venda.     
 #### 1️⃣ - Formulário de Registro de Compra (quando o vendedor compra um produto para revenda).      
 🔸 ID da Compra (Número)                                    
@@ -41,7 +44,7 @@
                            
 
 ## 2) Configurar o Google Sheets para armazenar essas informações automaticamente.    
-🔸 A criação de Formulários no Google intregra com a Planilha criada automáticamente. 
+🔸 A criação de Formulários no Google intregra com a Planilha criada automáticamente.                                       
 🔸 Esses dados são recebidos e, através de funções diretas do Excel, são manipulados corretamente.
 
 ### 1️⃣ - Funções da Planilha de Compra preenchidos automáticamente
