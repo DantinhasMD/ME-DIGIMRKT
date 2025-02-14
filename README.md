@@ -2,7 +2,7 @@
 Repositório para desenvolvimento do projeto baseado em Dados + Power BI + IA. Projeto desenvolvido para Eletiva da faculdade de Análise e Desenvolviemntos de Sistemas, utilizando também de habilidades desenvolvidas em outros cursos, como:
 -   Coursera: Análise de Dados: 
 -   Bootcamp Microsoft AI for Tech - Criando Prompts Inteligentes: [Arquivo](https://github.com/DantinhasMD/Bootcamp_Dio---Prompts.git)
--   Bootcamp DIO: Suzano - Análise de Dados com Power BI: [Arquivo](https://github.com/DantinhasMD/Bootcamp_Analise-de-DadosDIO.git})
+-   Bootcamp DIO: Suzano - Análise de Dados com Power BI: [Arquivo](https://github.com/DantinhasMD/Bootcamp_Analise-de-DadosDIO.git)
 -   Bootcamp DIO: Heineken - Inteligência Artificial Aplicada a Dados: [Arquivo](https://github.com/DantinhasMD/Bootcamp_Dio---Dados_IA.git)
 
 ## Apresentação do Problema 👀 
