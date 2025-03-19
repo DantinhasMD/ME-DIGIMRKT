@@ -42,9 +42,8 @@ O formulário de vendas é utilizado para registrar cada transação realizada. 
 4️⃣ Tarifa: Obtém automaticamente a taxa correspondente ao produto vendido.                                                                           
 
 #### Entretanto, encontramos algumas limitações do Google Forms:
-🔸 O Google Forms não permite preencher automaticamente campos dentro do formulário. Isso significa que, embora possamos exibir o valor da venda e a tarifa na planilha, não podemos fazer com que esses valores sejam preenchidos automaticamente no formulário quando um produto é selecionado.
-
-🔸O Google Forms não tem uma função de busca para a seleção de produtos, o que poderia facilitar a seleção de itens para venda.
+🔸 O Google Forms não permite preencher automaticamente campos dentro do formulário. Isso significa que, embora possamos exibir o valor da venda e a tarifa na planilha, não podemos fazer com que esses valores sejam preenchidos automaticamente no formulário quando um produto é selecionado.              
+🔸O Google Forms não tem uma função de busca para a seleção de produtos, o que poderia facilitar a seleção de itens para venda.                      
 
 📌 Adicionar imagem ilustrativa do formulário de vendas.
 
@@ -59,76 +58,75 @@ Para garantir que os clientes sejam registrados corretamente, criamos um formul�
 
 ##### Um dos desafios enfrentados nesse formulário foi a necessidade de capturar tanto CPF quanto CNPJ. Como o Google Forms não permite validações avançadas de números, foi necessária uma adaptação para garantir que tanto pessoas físicas quanto jurídicas pudessem ser registradas corretamente.
 
+# AQUI TEMOS O FORMATARPRODUTOS, SE BASEIAM NESSA TABELA PARA PREENCHER DE VERMELHO EEM COMPRAS - BOTA EM COMPRAS 
+
 📌 Adicionar imagem ilustrativa do formulário de clientes.
 
 
-## 2) Formulários Criados
+## 2) Modelagem do Banco de Dados na Planilha do Google
+A estrutura do nosso banco de dados foi construída dentro de uma planilha do Google, organizando as informações de compras, vendas, clientes e produtos de forma automatizada. Abaixo, detalhamos a modelagem das tabelas e os códigos aplicados para garantir o funcionamento correto do sistema.
 
+### 1. Tabela de Compras
+Essa tabela armazena todas as compras realizadas e contém as seguintes colunas:
 
+- IdCompra → Identificador único da compra, gerado automaticamente com a fórmula:[ =VALUE(IF(Compras!C2:C<>""; ROW()-1; "")) ]
+- Produto → Nome do produto adquirido (preenchido pelo formulário de compras).
+- Chave do Produto → Código específico do produto (preenchido pelo formulário).
+- Valor da Compra (R$) → Preço pago pelo produto (preenchido pelo formulário).
+- Data de Compra → Data em que a compra foi realizada (preenchido pelo formulário).
+- Fornecedor → Nome do fornecedor responsável pela venda (preenchido pelo formulário).
 
+#### Automação e Formatação Condicional
+1️⃣ Destaque por cor: A linha inteira da compra fica vermelha quando o produto ainda não foi vendido. Após a venda, a formatação condicional remove a cor.         
+2️⃣ Filtro no formulário de vendas: Apenas produtos que ainda não foram vendidos (linhas vermelhas) aparecem como opções disponíveis no formulário de vendas.      
 
+📌 Adicionar imagens para demonstrar a tabela e a formatação condicional.
 
+### 2. Tabela de Vendas
+Essa tabela armazena os registros de vendas e possui as seguintes colunas:
 
+- IdCliente → Código do cliente que realizou a compra (preenchido automaticamente pelo formulário).
+- idProduto → Identificador do produto vendido (preenchido automaticamente pelo formulário).
+- Valor da Venda (R$) → Preço de venda do produto (preenchido automaticamente pelo formulário).
+- Tarifa (R$) → Taxa cobrada pela plataforma (preenchido automaticamente pelo formulário).
+- Data da Venda → Data da transação (preenchido pelo formulário).
+- Vendedor → Nome do vendedor responsável (preenchido pelo formulário).
+- Valor da Compra → Obtido automaticamente da tabela de compras através do idProduto.
+- Lucro → Calculado automaticamente pela fórmula: [ Valor da Venda - Valor da Compra - Tarifa ].Se o lucro for negativo, a célula é formatada em vermelho.
+- Conclusão → Lista suspensa para indicar se a venda foi concluída ou devolvida.
+🔸 Se for "Devolução a você", a linha fica amarela.                                                                           
+🔸Se for "Devolução ao cliente", a célula fica laranja e o lucro é ajustado para [ -(Valor da Compra + Valor da Venda) ]
 
+# AQUI FICA O CODIGO ONEDIT
 
+- Produto e IdCompra → Apenas para organização e para referência nos códigos de automação.
+# AQUI TEMOS O FORMATARPRODUTOS, SE BASEIAM NESSA TABELA PARA PREENCHER DE VERMELHO EEM COMPRAS - BOTA EM COMPRAS 
 
+📌 Adicionar imagens das fórmulas e exemplos de vendas com lucro negativo e devoluções.
 
+### 3. Tabela de Clientes
+Essa tabela armazena os clientes cadastrados e suas informações de contato:
 
+- idCliente → Identificador único do cliente (preenchido automaticamente pelo formulário).
+- CPF → Número do CPF do cliente (preenchido pelo formulário).
+- Nome Completo → Nome completo do cliente (preenchido pelo formulário).
+- Telefone → Contato do cliente (preenchido pelo formulário).
+- Email → Endereço de e-mail (preenchido pelo formulário).
+- Problemas → Coluna que contabiliza quantas vezes um cliente teve problemas com compras. Essa informação é obtida automaticamente da tabela de vendas, verificando ocorrências de devolução.
+🔸Se o cliente tiver mais de uma ocorrência de problema, a célula fica vermelha.
+# AQUI FICA O CODIGO CONTARPROBLEMAS
 
-#### 1️⃣ - Formulário de Registro de Compra (quando o vendedor compra um produto para revenda).      
-🔸 ID da Compra (Número)                                    
-🔸 Nome do Produto (Texto curto)                                   
-🔸 Chave de Ativação (Texto curto)                                 
-🔸 Valor de Compra (Número)                                   
-🔸 Data da Compra (Data)                                                    
-🔸 idFornecedor (Texto curto)                                                             
- 
-📌 Ative a opção de "Coletar respostas em uma planilha do Google" para salvar automaticamente os dados. Lembre de colocar os tipos de dados que esta tabela dinâmica irá receber.
+📌 Adicionar imagens demonstrando a planilha de clientes e o código de contagem de problemas.
 
-#### 2️⃣ - Formulário de Registro de Venda (quando o vendedor vende um produto para um cliente).                                    
-🔸 CPF do Cliente (Texto curto)                                 
-🔸 ID da Compra (Número)                                
-🔸 Valor da Venda (Número)   
-🔸 Data da Venda (Data)       
-🔸 Nome do Vendedor (Texto curto)  
-🔸 Nome do Produto (Texto curto)                                   
-🔸 Valor de Compra (Número)                                   
-🔸 Tarifa da Plataforma (Número)                                 
-🔸 Lucro Obtido (Número)                                                                                                   
+### 4. Tabela de Informações
+Essa tabela contém informações gerais utilizadas para preenchimento automático dos formulários:
 
-📌 Faça as outras planilhas necessárias que não são ligadas a formulários.
+- Lista de Produtos → Todos os produtos disponíveis na loja.
+- Valor de Venda → Preço pelo qual cada produto é vendido.
+- Tarifa → Taxa aplicada a cada produto.
 
-#### 3️⃣ - Seção: Dados do Cliente (Formulário e Planilha)
-🔸 CPF (Texto curto)                                 
-🔸 Nome (Texto curto)                                 
-🔸 Telefone (Número)                                 
-🔸 E-mail (E-mail)                                 
+##### Os dados dessa tabela são utilizados para preencher automaticamente os valores nos formulários de compras e vendas, garantindo que as informações estejam sempre atualizadas.
+# AQUI OS CODIGOS FORMATARPRODUTOS E ATUALIZAR OPÇOES
 
-#### 4️⃣ - Seção: Controle de Estoque (Planilha)                                
-🔸 Produto (Texto curto)                                 
-🔸 Quantidade em Estoque (Número)                                 
-                           
-
-## 2) Configurar o Google Sheets para armazenar essas informações automaticamente.    
-🔸 A criação de Formulários no Google intregra com a Planilha criada automáticamente.                                       
-🔸 Esses dados são recebidos e, através de funções diretas do Excel, são manipulados corretamente.
-
-### 1️⃣ - Funções da Planilha de Compra preenchidos automáticamente
-🔸 ID da compra é gerado utilizando a função: 
-##### =IF(Compras!C2:C<>"", ROW()-1, "")
-
-### 2️⃣ - Funções da Planilha de Vendas preenchidos automáticamente
-🔸 O nome do Produto é obtido a partir do ID especificado, utilizando a função: 
-##### =INDEX(Compras!C:C, MATCH(Vendas!C3, Compras!B:B, 0))                 
-
-🔸 O valor da Compra é obtido a partir do ID especificado, utiliando a função: 
-#### =IFERROR(INDEX(Compras!E2:E, MATCH(Vendas!C3, Compras!B2:B, 0)), "")                      
-
-🔸 A Tarifa de hospedagem é                                                               
-🔸 O Lucro é calculado a partir da função: 
-#### =D3-H3-I3
-
-### 3️⃣ - Funções da Planilha de Estoque preenchidos automáticamente
-🔸 A quatidade de produtos é obtido a partir do nome especificado na coluna anterior, usando a função: 
-#### =COUNTIF(Compras!C:C, Estoque!A2) - COUNTIF(Vendas!G:G, Estoque!A2)
+📌 Adicionar imagens demonstrando a tabela de informações e como os dados são puxados para os formulários.
 
