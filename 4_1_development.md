@@ -35,10 +35,10 @@ O formulário de vendas é utilizado para registrar cada transação realizada. 
 
 #### Neste formulário, foram implementados quatro códigos essenciais:
 
-1️⃣ ID Cliente: Busca automaticamente os clientes registrados na planilha.
-2️⃣ ID Produto: Lista apenas os produtos que ainda estão em estoque.
-3️⃣ Valor da Venda: Define automaticamente o preço do produto com base nas informações cadastradas.
-4️⃣ Tarifa: Obtém automaticamente a taxa correspondente ao produto vendido.
+1️⃣ ID Cliente: Busca automaticamente os clientes registrados na planilha.                                                                 
+2️⃣ ID Produto: Lista apenas os produtos que ainda estão em estoque.                                                                                        
+3️⃣ Valor da Venda: Define automaticamente o preço do produto com base nas informações cadastradas.                                                             
+4️⃣ Tarifa: Obtém automaticamente a taxa correspondente ao produto vendido.                                                                           
 
 #### Entretanto, encontramos algumas limitações do Google Forms:
 🔸 O Google Forms não permite preencher automaticamente campos dentro do formulário. Isso significa que, embora possamos exibir o valor da venda e a tarifa na planilha, não podemos fazer com que esses valores sejam preenchidos automaticamente no formulário quando um produto é selecionado.
