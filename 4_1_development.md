@@ -1,7 +1,7 @@
 # Criar a Estrutura de Coleta de Dados (Preenchimento Automático) 
-## ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.     
+#### ✅ Objetivo: Automatizar o registro de dados das vendas e compras para evitar preenchimentos manuais.     
 
-### 📌 Pré-Desenvolvimento: Compreender os dados que precisamos e o relacionamento entre eles.
+## 📌 Pré-Desenvolvimento: Compreender os dados que precisamos e o relacionamento entre eles.
 
 ![Dados](https://github.com/user-attachments/assets/54547086-85b3-475d-b2e5-e610d4e90a44)
 
@@ -23,6 +23,7 @@ Este formulário é responsável por coletar informações sobre os produtos adq
 
 📌 Adicionar imagem ilustrativa do formulário de compras.
 
+
 ### 2. Formulário de Vendas
 O formulário de vendas é utilizado para registrar cada transação realizada. Os campos são:
 
@@ -36,7 +37,7 @@ O formulário de vendas é utilizado para registrar cada transação realizada. 
 #### Neste formulário, foram implementados quatro códigos essenciais:
 
 1️⃣ ID Cliente: Busca automaticamente os clientes registrados na planilha.                                                                 
-2️⃣ ID Produto: Lista apenas os produtos que ainda estão em estoque.                                                                                        
+2️⃣ ID Produto: Lista apenas os produtos que ainda estão em estoque.                                                                                  
 3️⃣ Valor da Venda: Define automaticamente o preço do produto com base nas informações cadastradas.                                                             
 4️⃣ Tarifa: Obtém automaticamente a taxa correspondente ao produto vendido.                                                                           
 
@@ -46,6 +47,7 @@ O formulário de vendas é utilizado para registrar cada transação realizada. 
 🔸O Google Forms não tem uma função de busca para a seleção de produtos, o que poderia facilitar a seleção de itens para venda.
 
 📌 Adicionar imagem ilustrativa do formulário de vendas.
+
 
 ### 3. Formulário de Clientes
 Para garantir que os clientes sejam registrados corretamente, criamos um formulário dedicado exclusivamente a eles. Os campos coletados são:
@@ -60,6 +62,7 @@ Para garantir que os clientes sejam registrados corretamente, criamos um formul�
 📌 Adicionar imagem ilustrativa do formulário de clientes.
 
 
+## 2) Formulários Criados
 
 
 
