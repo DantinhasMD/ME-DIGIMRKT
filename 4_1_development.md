@@ -42,8 +42,9 @@ O formulário de vendas é utilizado para registrar cada transação realizada. 
 4️⃣ Tarifa: Obtém automaticamente a taxa correspondente ao produto vendido.                                                                           
 
 #### Entretanto, encontramos algumas limitações do Google Forms:
-🔸 O Google Forms não permite preencher automaticamente campos dentro do formulário. Isso significa que, embora possamos exibir o valor da venda e a tarifa na planilha, não podemos fazer com que esses valores sejam preenchidos automaticamente no formulário quando um produto é selecionado.              
-🔸O Google Forms não tem uma função de busca para a seleção de produtos, o que poderia facilitar a seleção de itens para venda.                      
+🔸 O Google Forms não permite preencher automaticamente campos dentro do formulário. Isso significa que, embora possamos exibir o valor da venda e a tarifa na planilha, não podemos fazer com que esses valores sejam preenchidos automaticamente no formulário quando um produto é selecionado.                     
+ 
+🔸O Google Forms não tem uma função de busca para a seleção de produtos, o que poderia facilitar a seleção de itens para venda.                                   
 
 📌 Adicionar imagem ilustrativa do formulário de vendas.
 
@@ -93,9 +94,9 @@ Essa tabela armazena os registros de vendas e possui as seguintes colunas:
 - Vendedor → Nome do vendedor responsável (preenchido pelo formulário).
 - Valor da Compra → Obtido automaticamente da tabela de compras através do idProduto.
 - Lucro → Calculado automaticamente pela fórmula: [ Valor da Venda - Valor da Compra - Tarifa ].Se o lucro for negativo, a célula é formatada em vermelho.
-- Conclusão → Lista suspensa para indicar se a venda foi concluída ou devolvida.
-🔸 Se for "Devolução a você", a linha fica amarela.                                                                           
-🔸Se for "Devolução ao cliente", a célula fica laranja e o lucro é ajustado para [ -(Valor da Compra + Valor da Venda) ]
+- Conclusão → Lista suspensa para indicar se a venda foi concluída ou devolvida.                                                               
+🔸 Se for "Devolução a você", a linha fica amarela.                                                                                                   
+🔸Se for "Devolução ao cliente", a célula fica laranja e o lucro é ajustado para [ -(Valor da Compra + Valor da Venda) ]                                       
 
 # AQUI FICA O CODIGO ONEDIT
 
@@ -112,8 +113,8 @@ Essa tabela armazena os clientes cadastrados e suas informações de contato:
 - Nome Completo → Nome completo do cliente (preenchido pelo formulário).
 - Telefone → Contato do cliente (preenchido pelo formulário).
 - Email → Endereço de e-mail (preenchido pelo formulário).
-- Problemas → Coluna que contabiliza quantas vezes um cliente teve problemas com compras. Essa informação é obtida automaticamente da tabela de vendas, verificando ocorrências de devolução.
-🔸Se o cliente tiver mais de uma ocorrência de problema, a célula fica vermelha.
+- Problemas → Coluna que contabiliza quantas vezes um cliente teve problemas com compras. Essa informação é obtida automaticamente da tabela de vendas, verificando ocorrências de devolução.                                                                                            
+🔸Se o cliente tiver mais de uma ocorrência de problema, a célula fica vermelha.                                        
 # AQUI FICA O CODIGO CONTARPROBLEMAS
 
 📌 Adicionar imagens demonstrando a planilha de clientes e o código de contagem de problemas.
